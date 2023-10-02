@@ -325,7 +325,6 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
   }
 
   .header-nav {
@@ -427,6 +426,16 @@ h3 {
     padding: 0 15px;
   }
 
+  .header-nav {
+    gap: 76px;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
   .header-menu:hover,
   .address-contacts:hover {
     color: var(--pressed-state);
@@ -472,96 +481,6 @@ h3 {
     background-color: var(--pressed-state);
   }
 }
-
-/* .header {
-  border-bottom: 1px solid var(--accent);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-brand);
-  margin-right: 76px;
-}
-
-.header-accent {
-  color: var(--dark);
-}
-
-.header-list {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.header-menu {
-  display: inline-block;
-  color: var(--dark);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  padding: 24px 0;
-}
-
-.header-studio {
-  position: relative;
-  color: var(--pressed-state);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-studio::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 48px;
-  height: 4px;
-  background-color: var(--pressed-state);
-  border-radius: 2px;
-}
-
-.address {
-  font-style: normal;
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
-}
-
-.address-contacts {
-  color: var(--text);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-menu:hover,
-.header-menu:focus,
-.address-contacts:hover,
-.address-contacts:focus {
-  color: var(--pressed-state);
-} */
 
 /* .principles,
 .portfolio {
