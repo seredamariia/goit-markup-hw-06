@@ -321,6 +321,82 @@ h3 {
     max-width: 768px;
   }
 
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-nav {
+    gap: 120px;
+  }
+
+  .header-logo {
+    padding: 24px 0;
+  }
+
+  .header-hamburger {
+    display: none;
+  }
+
+  .header-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .header-menu {
+    display: inline-block;
+    color: var(--dark);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+  }
+
+  .header-studio {
+    position: relative;
+    color: var(--pressed-state);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-studio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: var(--pressed-state);
+    border-radius: 2px;
+  }
+
+  .address {
+    display: flex;
+    font-style: normal;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-contacts {
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu:focus,
+  .address-contacts:focus {
+    color: var(--pressed-state);
+  }
+
   .hero {
     padding: 112px 0;
   }
@@ -349,6 +425,11 @@ h3 {
   .container {
     max-width: 1158px;
     padding: 0 15px;
+  }
+
+  .header-menu:hover,
+  .address-contacts:hover {
+    color: var(--pressed-state);
   }
 
   .hero {
