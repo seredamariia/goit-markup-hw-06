@@ -59,6 +59,7 @@ img {
 button {
   font-family: inherit;
   color: currentColor;
+  cursor: pointer;
 }
 
 input {
@@ -102,6 +103,50 @@ h3 {
 }
 
 /* Mobile First */
+
+/* Header */
+
+.header {
+  border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  color: var(--primary-brand);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 16px 0;
+}
+
+.header-accent {
+  color: var(--dark);
+}
+
+.header-hamburger {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.header-list {
+  display: none;
+}
+
+.address {
+  display: none;
+}
 
 /* Hero section */
 
