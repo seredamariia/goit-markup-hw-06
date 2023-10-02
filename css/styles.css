@@ -906,6 +906,11 @@ h3 {
     width: calc((100% - 24px) / 2);
   }
 
+  .portfolio-image {
+    width: 356px;
+    height: 300px;
+  }
+
   .footer-content {
     text-align: left;
     justify-content: flex-start;
@@ -1058,6 +1063,10 @@ h3 {
 
   .portfolio-item:hover .portfolio-hidden {
     transform: translateY(0%);
+  }
+
+  .portfolio-image {
+    width: 360px;
   }
 
   .team-link:hover {
